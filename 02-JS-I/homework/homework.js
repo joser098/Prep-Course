@@ -68,14 +68,19 @@ function sonIguales(x, y) {
   // Devuelve "true" si "x" e "y" son iguales
   // De lo contrario, devuelve "false"
   // Tu código:
-  
+  var igual = x == y;
+  return igual;
 }
 
 function tienenMismaLongitud(str1, str2) {
   // Devuelve "true" si las dos strings tienen la misma longitud
   // De lo contrario, devuelve "false"
   // Tu código:
-  
+  var long1 = str1, long2 = str2;
+  if(long1.length == long2.length) {
+    return true;
+  } 
+  return false;
 }
 
 function menosQueNoventa(num) {
