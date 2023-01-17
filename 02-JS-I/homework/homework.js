@@ -119,6 +119,10 @@ function esPar(num) {
   // Devuelve "true" si "num" es par
   // De lo contrario, devuelve "false"
   // Tu código:
+  var par = num % 2;
+  if (par == 0) {
+    return true
+  } return false;
   
 }
 
@@ -126,6 +130,10 @@ function esImpar(num) {
   // Devuelve "true" si "num" es impar
   // De lo contrario, devuelve "false"
   // Tu código:
+  var impar = num % 2;
+  if (impar == 1) {
+    return true
+  } return false;
   
 }
 
@@ -253,6 +261,12 @@ function esVocal(letra){
   //que no se puede procesar el dato mediante el mensaje "Dato incorrecto".
   // Si no es vocal, tambien debe devolver "Dato incorrecto".
   //Escribe tu código aquí
+  var vocales = a, e, i, o ,u;
+  if (letra = vocales) {
+    return "Es vocal"
+  } else if (letra !== vocales) {
+    return "dato incorrecto"
+  }
   
 }
 
