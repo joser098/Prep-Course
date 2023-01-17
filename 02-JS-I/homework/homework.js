@@ -87,6 +87,11 @@ function menosQueNoventa(num) {
   // Devuelve "true" si el argumento de la función "num" es menor que noventa
   // De lo contrario, devuelve "false"
   // Tu código:
+  var numero = num;
+  if (numero < 90) {
+    return true;
+  }
+  return false;
   
 }
 
@@ -94,12 +99,19 @@ function mayorQueCincuenta(num) {
   // Devuelve "true" si el argumento de la función "num" es mayor que cincuenta
   // De lo contrario, devuelve "false"
   // Tu código:
+  var number = num;
+  if (number > 50) {
+    return true;
+  } 
+  return false;
   
 }
 
 function obtenerResto(x, y) {
   // Obten el resto de la división de "x" entre "y"
   // Tu código:
+  var resto = x % y;
+  return resto;
   
 }
 
@@ -120,38 +132,45 @@ function esImpar(num) {
 function elevarAlCuadrado(num) {
   // Devuelve el valor de "num" elevado al cuadrado
   // ojo: No es raiz cuadrada!
-  // Tu código:
+  // Tu código: 
+  var cuadrado = Math.pow(num,2);
+  return cuadrado;
   
 }
 
 function elevarAlCubo(num) {
   // Devuelve el valor de "num" elevado al cubo
   // Tu código:
-  
+  var cubo = Math.pow(num,3);
+  return cubo;
 }
 
 function elevar(num, exponent) {
   // Devuelve el valor de "num" elevado al exponente dado en "exponent"
   // Tu código:
-  
+  var elevar = Math.pow(num,exponent);
+  return elevar;
 }
 
 function redondearNumero(num) {
   // Redondea "num" al entero más próximo y devuélvelo
   // Tu código:
-  
+  var redondeo = Math.round(num);
+  return redondeo;
 }
 
 function redondearHaciaArriba(num) {
   // Redondea "num" hacia arriba (al próximo entero) y devuélvelo
   // Tu código:
-  
+  var rendondeoarriba = Math.ceil(num);
+  return rendondeoarriba;
 }
 
 function numeroRandom() {
   //Generar un número al azar entre 0 y 1 y devolverlo
   //Pista: investigá qué hace el método Math.random()
-  
+  var random = Math.random();
+  return random;
 }
 
 function esPositivo(numero) {
@@ -159,13 +178,20 @@ function esPositivo(numero) {
   //Si el número es positivo, devolver ---> "Es positivo"
   //Si el número es negativo, devolver ---> "Es negativo"
   //Si el número es 0, devuelve false
-  
+  var entero = numero;
+  if (numero > 0) {
+    return 'Es positivo'
+  } else if (numero < 0) {
+    return 'Es negativo'
+  } return false
 }
 
 function agregarSimboloExclamacion(str) {
   // Agrega un símbolo de exclamación al final de la string "str" y devuelve una nueva string
   // Ejemplo: "hello world" pasaría a ser "hello world!"
   // Tu código:
+  var str = 'Hola'
+  return str + '!';
 }
 
 function combinarNombres(nombre, apellido) {
