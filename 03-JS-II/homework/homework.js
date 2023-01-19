@@ -57,6 +57,20 @@ function colors(color) {
   //En caso que el color recibido sea "orange", devuleve --> "This is orange"
   //Caso default: devuelve --> "Color not found"
   //Usar el statement Switch.
+  switch (color) {
+    case "blue": {
+      return "This is blue";
+    }
+    case "red": {
+      return "This is red";
+    }
+    case "green": {
+      return "This is green";
+    }
+    case "orange": {
+      return "This is orange";
+    }
+ } return "Color not found"
 }
 
 function esDiezOCinco(numero) {
@@ -85,22 +99,47 @@ function esEntero(numero) {
   // De lo contrario, devuelve "false"
   // Pista: Puedes resolver esto usando `Math.floor`
   // Tu código:
+  if (numero >= 0 || numero < 0) {
+    return true;
+  }  return false;
 }
+
 
 function fizzBuzz(numero) {
   // Si "numero" es divisible entre 3, devuelve "fizz"
   // Si "numero" es divisible entre 5, devuelve "buzz"
   // Si "numero" es divisible entre 3 y 5 (ambos), devuelve "fizzbuzz"
   // De lo contrario, devuelve el numero
+  if (numero % 3 === 0 && numero % 5 === 0) {
+    return "fizzbuzz";
+  }
+  if (numero % 3 === 0) {
+    return "fizz";
+  } 
+  if (numero % 5 === 0) {
+    return "buzz";
+  }
+   return numero;
 }
-
 function operadoresLogicos(num1, num2, num3) {
   //La función recibe tres números distintos. 
   //Si num1 es mayor a num2 y a num3 y además es positivo, retornar ---> "Número 1 es mayor y positivo"
   //Si alguno de los tres números es negativo, retornar ---> "Hay negativos"
   //Si num3 es más grande que num1 y num2, aumentar su valor en 1 y retornar el nuevo valor.
   //0 no es ni positivo ni negativo. Si alguno de los argumentos es 0, retornar "Error".
-  //Si no se cumplen ninguna de las condiciones anteriores, retornar false. 
+  //Si no se cumplen ninguna de las condiciones anteriores, retornar false.
+  if (num1 === 0 || num2 === 0 || num3 === 0) {
+    return "Error";
+  }
+  if (num1 < 0 || num2 < 0 || num3 < 0) {
+    return "Hay negativos";
+  }
+  if( num3 > num1 && num3 > num2) {
+    return num3 + 1;
+  } 
+  if( num1 > num2 && num1 > num3 && num1 >= 1) {
+    return "Número 1 es mayor y positivo";
+  } return false;
 }
 
 function esPrimo(numero) {
@@ -115,7 +154,11 @@ function esVerdadero(valor){
   //Escribe una función que reciba un valor booleano y retorne “Soy verdadero” 
   //si su valor es true y “Soy falso” si su valor es false.
   //Escribe tu código aquí
-
+  if (valor === true) {
+    return "Soy verdadero";
+  }
+  else (valor === false)
+    return "Soy falso";
 }
 
 function tablaDelSeis(){
