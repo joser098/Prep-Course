@@ -102,9 +102,6 @@ function esEntero(numero) {
   if (numero >= 0 || numero < 0) {
     return true;
   } 
-  if(Number.isInteger(numero)) {
-    return false;
-  }return false;
 }
 
 function fizzBuzz(numero) {
@@ -183,11 +180,9 @@ function tablaDelSeis(){
 function tieneTresDigitos(numero){
   //Leer un número entero y retornar true si tiene 3 dígitos. Caso contrario, retorna false.
   //Escribe tu código aquí
-  if(numero = numero >= 0 || numero < 0 ){
+  if(numero < 1000 && numero > 99 ) {
     return true;
-  } if (numero.length === 3){
-    return true;
-} return false;
+  } return false;
 }
 
 function doWhile(numero) {
