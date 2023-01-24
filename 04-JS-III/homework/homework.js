@@ -66,11 +66,10 @@ function arrayContiene(array, elemento) {
   // Comprueba si el elemento existe dentro de "array"
   // Devuelve "true" si está, o "false" si no está
   // Tu código:
-  var contenido = array.find(elemento)
-  if (contenido = elemento) {
-    return true;
-  }return false;
-}
+ if(array.includes(elemento)) {
+  return true;
+ }return false;
+ }
 
 
 function agregarNumeros(numeros) {
@@ -153,6 +152,12 @@ function mayorACien(array) {
   //La función recibe un array con enteros entre 0 y 200. Recorrer el array y guardar en un nuevo array sólo los
   //valores mayores a 100 (no incluye el 100). Finalmente devolver el nuevo array.
   // Tu código:
+  let mayores = [];
+
+  for(i = 0; i < 200; i++) {
+  mayores += array[i];
+  mayores.push(i)
+} return mayores;
 }
 
 
@@ -164,7 +169,9 @@ function breakStatement(numero) {
   //devolver: "Se interrumpió la ejecución"
   //Pista: usá el statement 'break'
   // Tu código:
-}
+  }
+  
+
 
 
 function continueStatement(numero) {
