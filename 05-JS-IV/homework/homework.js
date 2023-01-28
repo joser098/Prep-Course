@@ -113,7 +113,7 @@ function pasarUsuarioAPremium (usuarios) {
   // Tu código:
 
   for(let usuario of usuarios) {
-    usuario.esPremiun = true;
+    usuario.esPremium = true;
   }
   return usuarios;
 }
